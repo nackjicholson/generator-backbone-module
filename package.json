@@ -1,9 +1,15 @@
 {
   "name": "generator-backbone-module",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A generator for Yeoman",
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "backbone",
+    "umd",
+    "amd",
+    "backbone-module",
+    "yeoman",
+    "grunt"
   ],
   "homepage": "https://github.com/nackjicholson/generator-backbone-module",
   "bugs": "https://github.com/nackjicholson/generator-backbone-module/issues",

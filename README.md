@@ -9,5 +9,20 @@ A generator for Yeoman.
 - Install the generator: `npm install -g generator-backbone-module`
 - Run: `yo backbone-module`
 
+## Features
+
+- Generates a backbone module that can be used with CommonJS, AMD, or as a global browser variable.
+- automated jsHint setup
+- automated tests with mocha-phantomjs and requirejs
+- watch / livereload
+- nodemon
+- build process with uglify.js
+- bower.json
+- bowerrc
+- pretty much ready to publish to bower.
+- skeleton for creating an example of your module.
+- basic readme
+- package.json
+
 ## License
 [MIT License](http://en.wikipedia.org/wiki/MIT_License)
