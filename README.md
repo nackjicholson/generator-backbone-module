@@ -1,7 +1,7 @@
 # Generator-backbone-module
 [![Build Status](https://secure.travis-ci.org/nackjicholson/generator-backbone-module.png?branch=master)](https://travis-ci.org/nackjicholson/generator-backbone-module)
 
-A generator for Yeoman.
+Yeoman Generator for creating distributable backbone modules.
 
 ## Getting started
 - Make sure you have [yo](https://github.com/yeoman/yo) installed:
