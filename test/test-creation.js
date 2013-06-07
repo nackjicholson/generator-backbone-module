@@ -22,12 +22,26 @@ describe('backbone-module generator', function () {
   it('creates expected files', function (done) {
     var expected = [
       // add files you expect to exist here.
+      ['lib/fried-chicken.js', /root.friedChicken/],
+      'test/test.config.js',
+      'test/test.fried-chicken.js',
+      'example/example.html',
+      'util/web-server.js',
+      ['bower.json', /"name": "fried-chicken"/],
+      ['package.json', /"author": "Leroy Jenkins"/],
+      'testrunner.html',
+      'Gruntfile.js',
+      'README.md',
+      'LICENSE.md',
+      '.bowerrc',
+      '.gitignore',
       '.jshintrc',
       '.editorconfig'
     ];
 
     helpers.mockPrompt(this.app, {
-      'someOption': 'Y'
+      'moduleName': 'fried-chicken',
+      'authorName': 'Leroy Jenkins'
     });
     this.app.options['skip-install'] = true;
     this.app.run({}, function () {
