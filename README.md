@@ -14,7 +14,7 @@ A generator for Yeoman.
 - Generates a backbone module that can be used with CommonJS, AMD, or as a global browser variable.
 - automated jsHint setup
 - automated tests with mocha-phantomjs and requirejs
-- watch / livereload
+- watch files for changes
 - nodemon
 - build process with uglify.js
 - bower.json
