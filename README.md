@@ -33,6 +33,12 @@ I've been building a lot of small backbone modules / mixins and releasing them o
 Write your module in `lib/your-module-name.js`
 Write your tests in `test/test.your-module-name.js`
 
+## Register your module for bower.
+
+The generated documentation tells people your module is on bower. You can either delete that documentation, or, do the right thing and register your module for bower.
+
+`$ bower register your-module-name git://github.com/username/your-module-name.git`
+
 ## Grunt tasks
 
 After you have done this:
