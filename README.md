@@ -21,6 +21,7 @@ Yeoman Generator for creating distributable backbone modules.
 - bowerrc
 - pretty much ready to publish to bower.
 - skeleton for creating an example of your module.
+- Automatic setup for travis ci
 - basic readme
 - package.json
 
@@ -48,14 +49,14 @@ When it has finished you can do the following grunt tasks.
 `$ grunt`  
 sets up a nodemon server that will reload on file changes.
 
-`$ grunt shell:mocha-phantomjs`  
-Will do a single test run.
-
 `$ grunt build`  
 Will make a copy of your module to the root directory, as well as a `your-module-name.min.js` compressed via uglifyjs. You should run `$ grunt build` before publishing your module to bower or npm.
 
 `$ grunt watch`  
 You should run this task whenever you are developing on your module. It watches the directory for file changes, runs them through JSHint, and will automatically run the tests. Extremely Useful.
+
+`$ grunt test` or `$ npm test`
+Will do a single test run through a connect server on port 8981. This is the same set of tests that will run during a travis-ci build.
 
 ## Support
 

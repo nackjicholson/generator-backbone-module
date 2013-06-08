@@ -38,6 +38,10 @@ BackboneModuleGenerator.prototype.askFor = function askFor() {
     message: 'What do you want to name this module?'
   },
   {
+    name: 'githubName',
+    message: 'What is the github username or organization where this module will be stored?'
+  },
+  {
     name: 'authorName',
     message: 'What is your name?' 
   }];
@@ -48,6 +52,7 @@ BackboneModuleGenerator.prototype.askFor = function askFor() {
     }
 
     this.moduleName = props.moduleName;
+    this.githubName = props.githubName;
     this.authorName = props.authorName;
 
     cb();
@@ -68,6 +73,7 @@ BackboneModuleGenerator.prototype.projectfiles = function projectfiles() {
   this.template('_README.md', 'README.md');
   this.template('_LICENSE.md', 'LICENSE.md');
 
+  this.copy('travis.yml', '.travis.yml');
   this.copy('bowerrc', '.bowerrc');
   this.copy('gitignore', '.gitignore');
   this.copy('editorconfig', '.editorconfig');

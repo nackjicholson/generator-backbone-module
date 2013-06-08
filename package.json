@@ -9,7 +9,8 @@
     "amd",
     "backbone-module",
     "yeoman",
-    "grunt"
+    "grunt",
+    "travis ci"
   ],
   "homepage": "https://github.com/nackjicholson/generator-backbone-module",
   "bugs": "https://github.com/nackjicholson/generator-backbone-module/issues",

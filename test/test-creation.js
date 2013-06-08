@@ -31,8 +31,9 @@ describe('backbone-module generator', function () {
       ['package.json', /"author": "Leroy Jenkins"/],
       'testrunner.html',
       'Gruntfile.js',
-      'README.md',
+      ['README.md', /https:\/\/secure\.travis-ci\.org\/leroyjenkins\/fried-chicken\.png\?branch\=master/],
       'LICENSE.md',
+      '.travis.yml',
       '.bowerrc',
       '.gitignore',
       '.jshintrc',
@@ -41,6 +42,7 @@ describe('backbone-module generator', function () {
 
     helpers.mockPrompt(this.app, {
       'moduleName': 'fried-chicken',
+      'githubName': 'leroyjenkins',
       'authorName': 'Leroy Jenkins'
     });
     this.app.options['skip-install'] = true;

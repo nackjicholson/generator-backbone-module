@@ -1,6 +1,8 @@
 # <%= _.slugify(moduleName) %>
 =================
 
+[![Build Status](https://secure.travis-ci.org/<%= githubName %>/<%= _.slugify(moduleName) %>.png?branch=master)](https://travis-ci.org/<%= githubName %>/<%= _.slugify(moduleName) %>)
+
 description
 
 Contributers:
