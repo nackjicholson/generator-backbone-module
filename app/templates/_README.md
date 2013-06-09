@@ -112,3 +112,5 @@ Also tests in the browser at <http://localhost:8000/testrunner.html>
 You can make an issue. Pull requests welcome.
 
 _your contact info here_
+
+component generated with yeoman and [backbone-module](https://github.com/nackjicholson/generator-backbone-module)
