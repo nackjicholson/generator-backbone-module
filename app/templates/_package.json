@@ -17,8 +17,8 @@
   "dependencies": {},
   "devDependencies": {
     "mocha": "~1.10.0",
-    "mocha-phantomjs": "~2.0.2",
-    "phantomjs": "~1.9.0-6",
+    "mocha-phantomjs": "~3.0.0",
+    "phantomjs": "~1.9.1-0",
     "grunt": "~0.4.1",
     "grunt-contrib-uglify": "~0.2.2",
     "grunt-contrib-copy": "~0.4.1",
