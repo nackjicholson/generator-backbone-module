@@ -53,7 +53,7 @@
     // Create a Backbone model
     var <%= _.camelize(_.slugify(moduleName)) %> = Backbone.Model.extend({
       defaults: {
-        name: 'My awesome <%= moduleName %>'
+        name: ''
       }
     });
 
