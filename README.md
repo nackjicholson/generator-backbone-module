@@ -59,7 +59,9 @@ sets up a nodemon server that will reload on file changes.
 Will make a copy of your module to the root directory, as well as a `your-module-name.min.js` compressed via uglifyjs. You should run `$ grunt build` before publishing your module to bower or npm.
 
 `$ grunt watch`  
-You should run this task whenever you are developing on your module. It watches the directory for file changes, runs them through JSHint, and will automatically run the tests. Extremely Useful.
+You should run this task whenever you are developing on your module. It watches the directory for file changes, runs them through JSHint, and will automatically run the tests. Extremely Useful. 
+
+**Make sure you have started the server with `$ grunt` before executing tests.**
 
 `$ grunt test` or `$ npm test`
 Will do a single test run through a connect server on port 8981. This is the same set of tests that will run during a travis-ci build.

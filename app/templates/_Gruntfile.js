@@ -68,7 +68,7 @@ module.exports = function(grunt) {
     }, 
     watch: {
       js: {
-        files: ['**/*.js', '!**/nodemodules/**'],
+        files: ['lib/**/*.js', 'test/**/*.js', '!**/nodemodules/**'],
         tasks: ['jshint', 'shell:mocha-phantomjs']
       }
     }
