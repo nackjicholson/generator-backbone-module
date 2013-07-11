@@ -9,9 +9,8 @@ define([
   var expect = chai.expect;
 
   describe('<%= _.slugify(moduleName) %>', function() {
-    it('expect 1 + 1 to equal 2', function() {
-      var sum = 1 + 1;
-      expect(sum).to.equal(2);
+    it('should have a name attribute by default', function() {      
+      expect(<%= _.camelize(_.slugify(moduleName)).get('name')).to.not.be(undefined);
     });
   });
 });
