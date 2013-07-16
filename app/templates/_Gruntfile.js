@@ -4,14 +4,14 @@
 'use strict';
 
 module.exports = function(grunt) {
-  
+
   var port = 8981;
 
   grunt.initConfig({
     copy: {
       dist: {
         files: [
-          {src: ['<%= _.slugify(moduleName) %>.js'], dest: './', cwd:'lib/', expand: true} 
+          {src: ['<%= _.slugify(moduleName) %>.js'], dest: './', cwd:'lib/', expand: true}
         ]
       }
     },
@@ -65,10 +65,10 @@ module.exports = function(grunt) {
         src: ['test/**/*.js']
       },
       lib: ['Gruntfile.js', 'lib/**/*.js']
-    }, 
+    },
     watch: {
       js: {
-        files: ['lib/**/*.js', 'test/**/*.js', '!**/nodemodules/**'],
+        files: ['lib/**/*.js', 'test/**/*.js', '!**/node_modules/**'],
         tasks: ['jshint', 'shell:mocha-phantomjs']
       }
     }
