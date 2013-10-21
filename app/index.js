@@ -19,20 +19,6 @@ util.inherits(BackboneModuleGenerator, yeoman.generators.Base);
 BackboneModuleGenerator.prototype.askFor = function askFor() {
   var cb = this.async();
 
-  // welcome message
-  var welcome =
-  '\n     _-----_' +
-  '\n    |       |' +
-  '\n    |' + '--(o)--'.red + '|   .--------------------------.' +
-  '\n   `---------´  |    ' + 'Welcome to Yeoman,'.yellow.bold + '    |' +
-  '\n    ' + '( '.yellow + '_' + '´U`'.yellow + '_' + ' )'.yellow + '   |   ' + 'ladies and gentlemen!'.yellow.bold + '  |' +
-  '\n    /___A___\\   \'__________________________\'' +
-  '\n     |  ~  |'.yellow +
-  '\n   __' + '\'.___.\''.yellow + '__' +
-  '\n ´   ' + '`  |'.red + '° ' + '´ Y'.red + ' `\n';
-
-  console.log(welcome);
-
   var prompts = [{
     name: 'moduleName',
     message: 'What do you want to name this module?'
@@ -43,14 +29,10 @@ BackboneModuleGenerator.prototype.askFor = function askFor() {
   },
   {
     name: 'authorName',
-    message: 'What is your name?' 
+    message: 'What is your name?'
   }];
 
-  this.prompt(prompts, function (err, props) {
-    if (err) {
-      return this.emit('error', err);
-    }
-
+  this.prompt(prompts, function (props) {
     this.moduleName = props.moduleName;
     this.githubName = props.githubName;
     this.authorName = props.authorName;
