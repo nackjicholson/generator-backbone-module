@@ -1,9 +1,9 @@
 // ## <%= _.slugify(moduleName) %>.js
-// 
+//
 // author: <%= authorName %>
 //
 // > description
-// 
+//
 // The below Use Anywhere setup was so graciously provided to me by:
 // <https://github.com/umdjs/umd/blob/master/returnExports.js>
 
@@ -49,14 +49,14 @@
         root.returnExports = factory(root.Backbone);
     }
 }(this, function (Backbone) {
-    
+
     // Create a Backbone model
-    var <%= _.camelize(_.slugify(moduleName)) %> = Backbone.Model.extend({
+    var <%= _.classify(moduleName) %> = Backbone.Model.extend({
       defaults: {
         name: ''
       }
     });
 
     // Export it.  This can be an object or a function.
-    return <%= _.camelize(_.slugify(moduleName)) %>;
+    return <%= _.classify(moduleName) %>;
 }));
